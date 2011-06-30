@@ -9,7 +9,8 @@ def testAnalyticsTags(url):
     ##regular expression for webtrends tags
     dcsid = re.search('[dcs]{3}[a-z,0-9_]{27}', str(page))
     tag = page('img#DCSIMG')
-    if tag.attr('src') != str or dcsid == ' ':
+    print type(tag.attr('src'))
+    if tag.attr('src') != str and dcsid == None:
         print "Error: " + url + " has no Webtrends tag"
         raise Exception("Webtrend Tag not found")
     else:
