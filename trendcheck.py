@@ -4,7 +4,7 @@ import re
 
 
 def testAnalyticsTags(url):
-    """ Check that the Webtrends image is present on page """
+    """ Check that the Webtrends image is present on the page """
     page = pq(url)
     # regular expression for Webtrends tags
     dcsid = re.search('[dcs]{3}[a-z,0-9_]{27}', str(page))
