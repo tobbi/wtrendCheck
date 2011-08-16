@@ -3,9 +3,9 @@ import argparse
 import re
 
 
-def testAnalyticsTags(url):
+def testAnalyticsTags(link):
     """ Check that the Webtrends image is present on the page """
-    page = pq(url)
+    page = pq(url=link)
     # regular expression for Webtrends tags
     dcsid = re.search('[dcs]{3}[a-z,0-9_]{27}', str(page))
     tag = page('img#DCSIMG')
