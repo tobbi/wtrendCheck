@@ -11,10 +11,10 @@ def testAnalyticsTags(link):
     tag = page('img#DCSIMG')
     print type(tag.attr('src'))
     if tag.attr('src') != str and dcsid == None:
-        print "Error: " + url + " has no Webtrends tag"
+        print "Error: " + link + " has no Webtrends tag"
         raise Exception("Webtrends tag not found")
     else:
-        print "URL: " + url
+        print "URL: " + link
         print "Tag Link: " + tag.attr('src')
         print "Tag:" + dcsid.group()
 
