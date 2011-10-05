@@ -5,6 +5,7 @@ http://www.mozilla.org/firefox/
 http://www.mozilla.org/en-US/firefox/6.0/whatsnew/
 http://www.mozilla.org/en-US/firefox/6.0/firstrun/
 http://www.mozilla.org
+http://www.mozillians.org
 http://quality.mozilla.org
 https://support.mozilla.com
 https://webifyme.org
